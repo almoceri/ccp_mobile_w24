@@ -3,74 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
     <title>Recipes</title>
 </head>
 <body>
-    <a href = "#skip">Skip to Main Content</a>
+    <div tabindex="0">
+    <a class="skip"  href = "#skip">Skip to Main Content</a>
+    </div>
+    
+
     <header>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "pets.html">Pets</a></li>
+            <ul class="navigation">
+                <li class="index"><a href = "index.html">Home</a></li>
+                <li class="pets"><a href = "pets.html">Pets</a></li>
                 <li class="active"><a href = "recipes.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
+                <li class="travel"><a href = "travel.html">Travel</a></li>
             </ul>
         </nav>
     </header>
     
     <main id="skip">
         <h1>Recipes</h1>
+        <br>
         <div>
             <h2>Spaghetti with tomato sauce</h2>
-            <img src="images/Speghetti.jpg" width = "400" alt="Plate of Spaghetti with tomato sauce">
-            <h3>Ingredients</h3>
-
-            <ul>
-                <li>Tomato sauce</li>
-                <li>Spaghetti</li>
-                <li>Salt</li>
-                <li>Garlic</li>
-                <li>Olive Oil</li>
-                <li>Water</li>
-                <li>Sugar</li>
+            <div class="foodgrid">
+                <img class="foodimage"  src="images/Speghetti.jpg" width = "400" alt="Plate of Spaghetti with tomato sauce">
                 
-            </ul>
+                <div class="ingredients">
+                <h3>Ingredients</h3>
+                <br>
+
+                <ul>
+                    <li>Tomato sauce</li>
+                    <li>Spaghetti</li>
+                    <li>Salt</li>
+                    <li>Garlic</li>
+                    <li>Olive Oil</li>
+                    <li>Water</li>
+                    <li>Sugar</li>
+                
+                </ul>
+                </div>
+
+                <div class="procedure">
             
-            <h3>Procedure</h3>
-            <h4>Prepping the Sauce</h4>
-            <p>If you have freshly prepared tomatoes:</p>
-            <ol>
-                <li>Slice around 3 cloves of garlic longways</li>
-                <li>Put a couple of tablespoons of olive oil in a pot, enough to barely cover the bottom and putn on low medium heat</li>
-                <li>Once oil has warmed up a bit, place sliced garlic in the oil</li>
-                <li>Wait for the garlic to get a little darker, but be careful not to burn the garlic, or it will skunk the sauce</li>
-                <li>Place uncooked sauce in the pot</li>
-                <li>Add a few tablespoons of sugar, and a teaspoon of salt</li>
-                <li>Let sauce cook for about 20 minutes, stiring frequently</li>
-            </ol>
+                <h3>Procedure</h3>
+                <h4>Prepping the Sauce:</h4>
+                <p>If you have freshly prepared tomatoes:</p>
+                <ol>
+                    <li>Slice around 3 cloves of garlic longways</li>
+                    <li>Put a couple of tablespoons of olive oil in a pot, enough to barely cover the bottom and putn on low medium heat</li>
+                    <li>Once oil has warmed up a bit, place sliced garlic in the oil</li>
+                    <li>Wait for the garlic to get a little darker, but be careful not to burn the garlic, or it will skunk the sauce</li>
+                    <li>Place uncooked sauce in the pot</li>
+                    <li>Add a few tablespoons of sugar, and a teaspoon of salt</li>
+                    <li>Let sauce cook for about 20 minutes, stiring frequently</li>
+                </ol>
 
-            <p>If you have a premade jar of sauce, then you're ready:
+                
 
-            </p>
-
-            <h4>Pasta</h4>
-            <ol>
-                <li>If you have a premade jar of sauce, then you're ready</li>
-                <li>Fill up a pot more than halfway with cold water</li>
-                <li>Let water boil</li>
-                <li>Place Spaghetti in boiling water</li>
-                <li>Immediately add a few tablespoons of salt</li>
-                <li>Stirring frequently, let pasta boil for about 7-8 minutes</li>
-                <li>When happy with the texture of the pasta, strain the water</li>
-                <li>Add sauce to pasta</li>
-                <li>Enjoy</li>
-            </ol>
+                <h4>Pasta:</h4>
+                <ol>
+                    <li>If you have a premade jar of sauce, then you're ready</li>
+                    <li>Fill up a pot more than halfway with cold water</li>
+                    <li>Let water boil</li>
+                    <li>Place Spaghetti in boiling water</li>
+                    <li>Immediately add a few tablespoons of salt</li>
+                    <li>Stirring frequently, let pasta boil for about 7-8 minutes</li>
+                    <li>When happy with the texture of the pasta, strain the water</li>
+                    <li>Add sauce to pasta</li>
+                    <li>Enjoy</li>
+                </ol>
+            
+            </div>
         
         </div>
         <div>
             <h2>Grilled Cheese Sandwich</h2>
-            <img src="images/grilled-cheese.jpg" width = "400" alt="Grilled Cheese Sandwich">
+            <div class="foodgrid">
+            
+            <img class="foodimage" src="images/grilled-cheese.jpg" width = "400" alt="Grilled Cheese Sandwich">
+            
+            <div class="ingredients">
             <h3>Ingredients</h3>
+            <br>
 
             <ul>
                 <li>Cheese of choice</li>
@@ -79,6 +98,11 @@
                 
                 
             </ul>
+            </div>
+
+            <div class="procedure">
+            
+                <h3>Procedure</h3>
             <ol>
                 <li>Butter the Bread</li>
                 <li>Place bread butter-side-down on the frying pan</li>
@@ -87,12 +111,19 @@
                 <li>Flip the sandwich and let the other side cook</li>
                 <li>Enjoy</li>
             </ol>
+            </div>
+        </div>
         </div>
         <div>
             <h2>Italian Sausage and Peppers</h2>
-            <img src="images/Italian-Sausage-and-Peppers-Sanwich.jpeg" width = "400" alt="An Italian sausage with peppers between bread">
-            <h3>Ingredients</h3>
+            <div class="foodgrid">
+            
+            <img class="foodimage" src="images/Italian-Sausage-and-Peppers-Sanwich.jpeg" width = "400" alt="An Italian sausage with peppers between bread">
+            
 
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                <br>
             <ul>
                 <li>Italian Sausage</li>
                 <li>Bread</li>
@@ -103,6 +134,11 @@
                 
                 
             </ul>
+
+            </div>
+            <div class="procedure">
+            
+                <h3>Procedure</h3>
             <ol>
                 <li>Slice a quarter onion longways</li>
                 <li>Slice your choice of peppers longways</li>
@@ -113,6 +149,10 @@
                 <li>Once sausage is cooked, place it within a bun, and placing a generous amount of peppers and onions in as well</li>
                 <li>Enjoy</li>
             </ol>
+            </div>
+        </div>
+            </div>
+            </div>
         </div>
         <div></div>
         <div></div>
